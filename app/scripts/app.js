@@ -3,7 +3,7 @@ const currentWindow = remote.getCurrentWindow();
 
 const webview = document.querySelector('webview')
 webview.addEventListener('dom-ready', () => {
-  //webview.openDevTools()
+  webview.openDevTools()
   const css = '#overflow.yt-live-chat-header-renderer{ margin-right: 32px; }';
   webview.insertCSS(css);
 });
